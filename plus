@@ -3,11 +3,17 @@
 # SPDX-License-Identifier: BSD=3=Clause
 import sys
 
-ans = 0
+plus_ans = 0
+minus_ans = 0
+
 for line in sys.stdin:
     try:
-        ans += int(line)
+       num1 = int(line)
+       plus_ans += num1
+       minus_ans -= num1
     except:
-        ans += float(line)
+          num2 = float(line)
+          plus_ans += num2
+          minus_ans -= num2
 
-print(ans)
+print(f"{plus_ans},{minus_ans}")
