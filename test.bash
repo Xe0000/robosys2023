@@ -12,11 +12,11 @@ res=0
 ### I/O TEST ###
 out=$(seq 5 | ./plus)
 echo "Output: ${out}"
-[ "${out}" = "15,-15" ] || ng ${LINENO}
+[ "${out}" = "15,-15,120" ] || ng ${LINENO}
 
 out=$(echo -e "1\n2\n-1\n0.1" | python3 plus) #マイナスと小数点を含めてテスト
 echo "Output: ${out}"
-[ "${out}" = "2.1,-2.1" ] || ng ${LINENO}
+[ "${out}" = "2.1,-2.1,-0.2" ] || ng ${LINENO}
 
 ### 例外処理 ###
 out=$(echo あ | ./plus)

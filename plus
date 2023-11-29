@@ -5,15 +5,18 @@ import sys
 
 plus_ans = 0
 minus_ans = 0
+multiply_ans = 1
 
 for line in sys.stdin:
     try:
         num1 = int(line)
         plus_ans += num1
         minus_ans -= num1
+        multiply_ans *= num1
     except:
         num2 = float(line)
         plus_ans += num2
-        minus_ans -= num2 
+        minus_ans -= num2
+        multiply_ans *= num2
 
-print(f"{plus_ans},{minus_ans}")
+print(f"{plus_ans},{minus_ans},{multiply_ans}")
