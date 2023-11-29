@@ -14,6 +14,6 @@ for line in sys.stdin:
     except:
           num2 = float(line)
           plus_ans += num2
-          minus_ans -= num2
+          minus_ans -= num2 
 
 print(f"{plus_ans},{minus_ans}")
