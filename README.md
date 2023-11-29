@@ -47,7 +47,7 @@ echo -e "1\n2\n-1\n0.1" | python3 plus
 
 # 必要なソフトウェア
 * Python
-   テスト済み:3.7~3.10
+   * テスト済み:3.7~3.10
 # テスト環境
 * Ubuntu20.04 on Windows
 

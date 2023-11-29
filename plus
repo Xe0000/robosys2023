@@ -7,13 +7,13 @@ plus_ans = 0
 minus_ans = 0
 
 for line in sys.stdin:
-    try:
-       num1 = int(line)
-       plus_ans += num1
-       minus_ans -= num1
-    except:
-          num2 = float(line)
-          plus_ans += num2
-          minus_ans -= num2 
+   try:
+      num1 = int(line)
+      plus_ans += num1
+      minus_ans -= num1
+   except:
+      num2 = float(line)
+      plus_ans += num2
+      minus_ans -= num2 
 
 print(f"{plus_ans},{minus_ans}")
